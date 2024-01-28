@@ -1,6 +1,7 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
 
+
 export const Logo: React.FC<IconSvgProps> = ({
 	size = 36,
 	width,
@@ -212,3 +213,90 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+export const LinkedInIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => {
+	return (
+	  <svg
+		height={size || height}
+		viewBox="0 0 24 24"
+		width={size || width}
+		{...props}
+	  >
+		<path
+		  fill="currentColor"
+		  d="M19.29,3H4.71A1.71,1.71,0,0,0,3,4.71V19.29A1.71,1.71,0,0,0,4.71,21H19.29A1.71,1.71,0,0,0,21,19.29V4.71A1.71,1.71,0,0,0,19.29,3ZM8.09,18.44H5.56V10h2.53ZM6.83,8.69A1.44,1.44,0,1,1,8.27,7.25,1.44,1.44,0,0,1,6.83,8.69ZM18.44,18.44H15.91V14c0-1.06,0-2.42-1.47-2.42s-1.7,1.15-1.7,2.35v4.51H10.22V10h2.41v1.16h.03a2.65,2.65,0,0,1,2.38-1.31c2.55,0,3.02,1.68,3.02,3.86Z"
+		/>
+	  </svg>
+	);
+  };
+
+  export const ResumeIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => {
+	return (
+	  <svg
+		height={size || height}
+		viewBox="0 0 24 24"
+		width={size || width}
+		{...props}
+	  >
+		<path
+		  fill="currentColor"
+		  d="M12,2C9.79,2,8,3.79,8,6s1.79,4,4,4s4-1.79,4-4S14.21,2,12,2z M12,13c-2.67,0-8,1.34-8,4v3h16v-3C20,14.34,14.67,13,12,13z"
+		/>
+	  </svg>
+	);
+  };
+
+  export const LetterCIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => {
+	return (
+	  <svg
+		height={size || height}
+		viewBox="0 0 24 24"
+		width={size || width}
+		{...props}
+	  >
+		<path
+		  fill="currentColor"
+		  d="M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2z M12,4C7.59,4,4,7.59,4,12
+		  s3.59,8,8,8s8-3.59,8-8S16.41,4,12,4z M10,16.5c-2.48,0-4.5-2.02-4.5-4.5S7.52,7.5,10,7.5s4.5,2.02,4.5,4.5
+		  S12.48,16.5,10,16.5z M10,9C8.34,9,7,10.34,7,12s1.34,3,3,3s3-1.34,3-3S11.66,9,10,9z"
+		/>
+	  </svg>
+	);
+  };
+
+  export const RightArrowIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => {
+	return (
+	  <svg
+		height={size || height}
+		viewBox="0 0 24 24"
+		width={size || width}
+		{...props}
+	  >
+		<path
+		  fill="currentColor"
+		  d="M9 18l6-6-6-6v12z"
+		/>
+	  </svg>
+	);
+  };
+
