@@ -256,7 +256,7 @@ export const LinkedInIcon: React.FC<IconSvgProps> = ({
 	);
   };
 
-  export const LetterCIcon: React.FC<IconSvgProps> = ({
+  export const TriangleCircleIcon: React.FC<IconSvgProps> = ({
 	size = 24,
 	width,
 	height,
@@ -269,15 +269,18 @@ export const LinkedInIcon: React.FC<IconSvgProps> = ({
 		width={size || width}
 		{...props}
 	  >
+		<circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" strokeWidth="2" />
 		<path
 		  fill="currentColor"
-		  d="M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2z M12,4C7.59,4,4,7.59,4,12
-		  s3.59,8,8,8s8-3.59,8-8S16.41,4,12,4z M10,16.5c-2.48,0-4.5-2.02-4.5-4.5S7.52,7.5,10,7.5s4.5,2.02,4.5,4.5
-		  S12.48,16.5,10,16.5z M10,9C8.34,9,7,10.34,7,12s1.34,3,3,3s3-1.34,3-3S11.66,9,10,9z"
+		  d="M12 7.5L7 17h10L12 7.5z"
 		/>
 	  </svg>
 	);
   };
+  
+  
+  
+
 
   export const RightArrowIcon: React.FC<IconSvgProps> = ({
 	size = 24,

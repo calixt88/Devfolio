@@ -21,7 +21,7 @@ import clsx from "clsx";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	GithubIcon,
-	LetterCIcon
+	TriangleCircleIcon
 
 } from "@/components/icons";
 
@@ -30,12 +30,12 @@ import { button as buttonStyles } from "@nextui-org/theme";
 
 export const Navbar = () => {
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="xl" position="sticky" className="pt-4">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<LetterCIcon />
-						<p className="font-bold text-inherit">Calixt Charlebois</p>
+						<TriangleCircleIcon size={42}/>
+						{/* <p className="text-inherit text-4xl">Calixt Charlebois</p> */}
 					</NextLink>
 				</NavbarBrand>
 			</NavbarContent>
@@ -47,28 +47,28 @@ export const Navbar = () => {
 				<Link
 					isExternal
 					href={siteConfig.links.linkedin}
-					className={buttonStyles({ color: "default", radius: "full", variant: "shadow", size: "md"})}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary", size: "lg"})}
 				>
 					About
 				</Link>
 				<Link
 					isExternal
 					href={siteConfig.links.linkedin}
-					className={buttonStyles({ color: "default", radius: "full", variant: "shadow", size: "md"})}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary", size: "lg"})}
 				>
 					Projects
 				</Link>
 				<Link
 					isExternal
 					href={siteConfig.links.linkedin}
-					className={buttonStyles({ color: "default", radius: "full", variant: "shadow", size: "md"})}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary", size: "lg"})}
 				>
 					Skills
 				</Link>
 				<Link
 					isExternal
 					href={siteConfig.links.linkedin}
-					className={buttonStyles({ color: "default", radius: "full", variant: "shadow", size: "md"})}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary", size: "lg"})}
 				>
 					Contact
 				</Link>
