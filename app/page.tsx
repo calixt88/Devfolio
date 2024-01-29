@@ -74,8 +74,8 @@ export default function Home() {
 		<section className="flex flex-col gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-left justify-center">
 				<h1 className={title({ size: "lg" })}>Hello! I'm&nbsp;</h1>
-				<h1 className={title({ size: "lg", color: "violet" })}>Calixt&nbsp;</h1>
-				<h1 className={title({ size: "lg", color: "violet" })}>Charlebois</h1>
+				<h1 className={title({ size: "lg", color: "yellow" })}>Calixt&nbsp;</h1>
+				<h1 className={title({ size: "lg", color: "yellow" })}>Charlebois</h1>
 				<h1 className={title({ size: "lg" })}>,&nbsp;</h1>
 				<br />
 				<h1 className={title({ size: "lg", color: "foreground" })}>Software Engineer&nbsp;</h1>
@@ -84,7 +84,7 @@ export default function Home() {
 			<div className="flex gap-3">
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
 					href={siteConfig.links.github}
 				>
 					<GithubIcon size={20} />
@@ -92,7 +92,7 @@ export default function Home() {
 				</Link>
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
 					href={siteConfig.links.linkedin}
 				>
 					<LinkedInIcon size={20} />
@@ -100,7 +100,7 @@ export default function Home() {
 				</Link>
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
 					href={"/images/CalixtCharleboisResume.pdf"}
 					download="CalixtCharleboisResume.pdf"
 				>
@@ -117,7 +117,7 @@ export default function Home() {
 			<div className="inline-block max-w-lg text-left justify-center">
 			<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "secondary" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
 					href={siteConfig.links.linkedin}
 				>
 					<RightArrowIcon size={20} />

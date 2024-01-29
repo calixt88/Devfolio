@@ -256,27 +256,26 @@ export const LinkedInIcon: React.FC<IconSvgProps> = ({
 	);
   };
 
-  export const TriangleCircleIcon: React.FC<IconSvgProps> = ({
-	size = 24,
-	width,
-	height,
-	...props
-  }) => {
-	return (
-	  <svg
-		height={size || height}
-		viewBox="0 0 24 24"
-		width={size || width}
-		{...props}
-	  >
-		<circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" strokeWidth="2" />
-		<path
-		  fill="currentColor"
-		  d="M12 7.5L7 17h10L12 7.5z"
-		/>
-	  </svg>
-	);
-  };
+export const ReactLogoIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg
+      height={size || height}
+      viewBox="0 0 24 24"
+      width={size || width}
+      {...props}
+    >
+      <circle cx="12" cy="12" r="2" fill="currentColor" />
+      <ellipse cx="12" cy="12" rx="11" ry="2" fill="none" stroke="currentColor" strokeWidth="1" />
+      <ellipse cx="12" cy="12" rx="2" ry="11" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="2" ry="11" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(120 12 12)" />
+    </svg>
+  );
+};
   
   
   
