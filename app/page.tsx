@@ -1,5 +1,5 @@
 // use client
-import React, { Suspense } from 'react';
+import React, { Suspense, useCallback } from 'react';
 import { Card, CardFooter, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
@@ -9,32 +9,11 @@ import { GithubIcon } from "@/components/icons";
 import { LinkedInIcon } from "@/components/icons";
 import { ResumeIcon } from '@/components/icons';
 import { RightArrowIcon } from '@/components/icons';
-
-function MyCard() {
-    return (
-        <Card
-            isFooterBlurred
-            radius="lg"
-            className="border-none"
-        >
-            <Image
-                alt="Woman listening to music"
-                className="object-cover"
-                height={200}
-                src="/images/hero-card.jpeg"
-                width={200}
-            />
-            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-                <p className="text-tiny text-white/80">Available soon.</p>
-                <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
-                    Notify me
-                </Button>
-            </CardFooter>
-        </Card>
-    );
-}
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles'
 
 export default function Home() {
+
 	const list = [
 		{
 		  title: "C++",
@@ -74,8 +53,8 @@ export default function Home() {
 		<section className="flex flex-col gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-left justify-center">
 				<h1 className={title({ size: "lg" })}>Hello! I'm&nbsp;</h1>
-				<h1 className={title({ size: "lg", color: "yellow" })}>Calixt&nbsp;</h1>
-				<h1 className={title({ size: "lg", color: "yellow" })}>Charlebois</h1>
+				<h1 className={title({ size: "lg", color: "green" })}>Calixt&nbsp;</h1>
+				<h1 className={title({ size: "lg", color: "green" })}>Charlebois</h1>
 				<h1 className={title({ size: "lg" })}>,&nbsp;</h1>
 				<br />
 				<h1 className={title({ size: "lg", color: "foreground" })}>Software Engineer&nbsp;</h1>
@@ -84,7 +63,7 @@ export default function Home() {
 			<div className="flex gap-3">
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 					href={siteConfig.links.github}
 				>
 					<GithubIcon size={20} />
@@ -92,7 +71,7 @@ export default function Home() {
 				</Link>
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 					href={siteConfig.links.linkedin}
 				>
 					<LinkedInIcon size={20} />
@@ -100,7 +79,7 @@ export default function Home() {
 				</Link>
 				<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 					href={"/images/CalixtCharleboisResume.pdf"}
 					download="CalixtCharleboisResume.pdf"
 				>
@@ -117,7 +96,7 @@ export default function Home() {
 			<div className="inline-block max-w-lg text-left justify-center">
 			<Link
 					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full", color: "warning" })}
+					className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 					href={siteConfig.links.linkedin}
 				>
 					<RightArrowIcon size={20} />
