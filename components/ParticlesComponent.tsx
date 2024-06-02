@@ -9,7 +9,7 @@ const ParticlesComponent: React.FC<{ id: string }> = ({ id }) => {
   const options = useMemo(() => {
     return {
       background: {
-        color: "#00000000", // Make background transparent
+        color: "#00000000", 
       },
       fullScreen: {
         enable: true,
@@ -30,7 +30,7 @@ const ParticlesComponent: React.FC<{ id: string }> = ({ id }) => {
       },
       particles: {
         number: {
-          value: 50, // Initial number of particles
+          value: 50, 
         },
         links: {
           enable: true,

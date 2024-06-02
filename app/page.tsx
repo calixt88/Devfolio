@@ -63,7 +63,7 @@ export default function Home() {
         <br />
         <div className="inline-block max-w-lg text-center justify-center bg-transparent">
           <p>
-            I'm a Senior Software Engineering student at Milwaukee School of Engineering and I have an expected graduation date of May, 2024. I have experience in many individual and team-based programming projects. I am currently a member of the Milwaukee School of Engineering club soccer team and MSOE Esports. I am working for Miller Electric as a Software Engineering Intern. How to contact me: calixtcharlebois@gmail.com or (906) 399-6739.
+            I'm a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working for Miller Electric as a Software Developer. 
           </p>
         </div>
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
