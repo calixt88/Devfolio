@@ -25,7 +25,7 @@ export default function Home() {
       <ParticlesComponent id="tsparticles" />
       <section className="flex flex-col gap-4 py-8 md:py-10 min-h-screen relative z-0 bg-transparent">
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
-          <h1 className={title({ size: "lg" })}>Hello! I'm&nbsp;</h1>
+          <h1 className={title({ size: "lg" })}>Hello! I&apos;m&nbsp;</h1>
           <h1 className={title({ size: "lg", color: "green" })}>Calixt&nbsp;</h1>
           <h1 className={title({ size: "lg", color: "green" })}>Charlebois</h1>
           <h1 className={title({ size: "lg" })}>,&nbsp;</h1>
@@ -63,7 +63,7 @@ export default function Home() {
         <br />
         <div className="inline-block max-w-lg text-center justify-center bg-transparent">
           <p>
-            I'm a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working for Miller Electric as a Software Developer. 
+            I&apos;m a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working for Miller Electric as a Software Developer. 
           </p>
         </div>
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
