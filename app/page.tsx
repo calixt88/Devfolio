@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense } from 'react';
+import React, { Suspense, useRef } from 'react';
 import { Image, Link } from "@nextui-org/react";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
@@ -9,6 +9,14 @@ import { GithubIcon, LinkedInIcon, ResumeIcon, RightArrowIcon } from "@/componen
 import ParticlesComponent from '@/components/ParticlesComponent';
 
 export default function Home() {
+  const aboutMeRef = useRef(null);
+
+  const scrollToAboutMe = () => {
+    if (aboutMeRef.current) {
+      aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const list = [
     { title: "C++", img: "/images/cplusplus.png" },
     { title: "Java", img: "/images/java.png" },
@@ -23,6 +31,7 @@ export default function Home() {
   return (
     <Suspense fallback={<div>Loading background...</div>}>
       <ParticlesComponent id="tsparticles" />
+      {/* Start of the beginning section */}
       <section className="flex flex-col gap-4 py-8 md:py-10 min-h-screen relative z-0 bg-transparent">
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
           <h1 className={title({ size: "lg" })}>Hello! I&apos;m&nbsp;</h1>
@@ -67,15 +76,17 @@ export default function Home() {
           </p>
         </div>
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
-          <Link
-            isExternal
+          <button
             className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
-            href={siteConfig.links.linkedin}
+            onClick={scrollToAboutMe}
           >
             <RightArrowIcon size={20} />
             About Me!
-          </Link>
+          </button>
         </div>
+        {/* End of the beginning section */}
+
+        {/* Start of the skills section */}
         <div className="text-center custom-margin-top bg-transparent">
           <h1 className={title({ size: "lg", color: "foreground" })}>Skills</h1>
         </div>
@@ -97,6 +108,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* End of the skills section */}
+
+      {/* Start of the about me section */}
+      <section ref={aboutMeRef} className="py-8 md:py-10">
+        <h1 className={title({ size: "lg", color: "foreground" })}>About Me</h1>
+        <p>Here is some information about me...</p>
+        {/* Add more content here as needed */}
+      </section>
+      {/* End of the about me section */}
     </Suspense>
   );
 }
