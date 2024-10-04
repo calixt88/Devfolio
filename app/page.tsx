@@ -63,7 +63,7 @@ export default function Home() {
         <br />
         <div className="inline-block max-w-lg text-center justify-center bg-transparent">
           <p>
-            I&apos;m a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working for Miller Electric as a Software Developer. 
+            I&apos;m a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working as a Software Developer. 
           </p>
         </div>
         <div className="inline-block max-w-lg text-left justify-center bg-transparent">
@@ -76,13 +76,17 @@ export default function Home() {
             About Me!
           </Link>
         </div>
-        <div className="text-center custom-margin-top bg-transparent">
-          <h1 className={title({ size: "lg", color: "foreground" })}>Skills</h1>
+
+        {/* Adjusted margin-top to reduce the gap before "Experience" */}
+        <div className="text-center mt-8 bg-transparent">
+          <h1 className={title({ size: "lg", color: "foreground" })}>Experience</h1>
         </div>
+
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-5 custom-margin-top-small item-container" style={{ gap: '55px' }}>
+          {/* Adjusted margin-top to align the grid appropriately */}
+          <div className="grid grid-cols-2 sm:grid-cols-5 mt-6" style={{ gap: '55px' }}>
             {list.map((item) => (
-              <div key={item.title} className="item-container flex flex-col justify-center items-center bg-transparent">
+              <div key={item.title} className="flex flex-col justify-center items-center bg-transparent">
                 <Image
                   radius="lg"
                   width="75%"
@@ -91,7 +95,7 @@ export default function Home() {
                   className="w-full"
                   src={item.img}
                 />
-                <h3 className="item-title text-center mt-2">{item.title}</h3>
+                <h3 className="text-center mt-2">{item.title}</h3>
               </div>
             ))}
           </div>
