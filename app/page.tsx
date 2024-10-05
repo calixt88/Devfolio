@@ -5,7 +5,7 @@ import { Image, Link } from "@nextui-org/react";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { AzureIcon, C, CIcon, CPP, CPPIcon, CSharpIcon, CustomIcon1, CustomIcon6, DotNet, DotNetCore, DotNetCoreIcon, DotNetIcon, GithubIcon, JavaIcon, JavaScriptIcon, LinkedInIcon, MongoDBIcon, Python, PythonIcon, ReactIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
+import { AzureIcon, CIcon, CPPIcon, CSharpIcon, DotNetCoreIcon, DotNetIcon, GithubIcon, JavaIcon, JavaScriptIcon, LinkedInIcon, MongoDBIcon, PythonIcon, ReactIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
 import ParticlesComponent from '@/components/ParticlesComponent';
 
 export default function Home() {
