@@ -5,20 +5,10 @@ import { Image, Link } from "@nextui-org/react";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { GithubIcon, LinkedInIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
+import { AzureIcon, C, CIcon, CPP, CPPIcon, CSharpIcon, CustomIcon1, CustomIcon6, DotNet, DotNetCore, DotNetCoreIcon, DotNetIcon, GithubIcon, JavaIcon, JavaScriptIcon, LinkedInIcon, MongoDBIcon, Python, PythonIcon, ReactIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
 import ParticlesComponent from '@/components/ParticlesComponent';
 
 export default function Home() {
-  const list = [
-    { title: "C++", img: "/images/cplusplus.png" },
-    { title: "Java", img: "/images/java.png" },
-    { title: "Python", img: "/images/python.png" },
-    { title: "Lemon", img: "/images/msoe.png" },
-    { title: "Avocado", img: "/images/msoe.png" },
-    { title: "Lemon 2", img: "/images/msoe.png" },
-    { title: "Banana", img: "/images/msoe.png" },
-    { title: "Watermelon", img: "/images/msoe.png" },
-  ];
 
   return (
     <Suspense fallback={<div>Loading background...</div>}>
@@ -61,44 +51,28 @@ export default function Home() {
           </Link>
         </div>
         <br />
-        <div className="inline-block max-w-lg text-center justify-center bg-transparent">
+        <div className="inline-block max-w-lg text-center justify-center bg-transparent mb-20">
           <p>
             I&apos;m a recent graduate of Milwaukee School of Engineering with a bachelors in Software Engineering. I have experience in many individual and team-based projects from internships, side projects with other developers, and from full time positions. I am currently working as a Software Developer. 
           </p>
         </div>
-        <div className="inline-block max-w-lg text-left justify-center bg-transparent">
-          <Link
-            isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
-            href={siteConfig.links.linkedin}
-          >
-            <RightArrowIcon size={20} />
-            About Me!
-          </Link>
-        </div>
 
-        {/* Adjusted margin-top to reduce the gap before "Experience" */}
-        <div className="text-center mt-8 bg-transparent">
+        <div className="text-center mt-40 bg-transparent">
           <h1 className={title({ size: "lg", color: "foreground" })}>Experience</h1>
         </div>
 
         <div className="flex justify-center">
-          {/* Adjusted margin-top to align the grid appropriately */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 mt-6" style={{ gap: '55px' }}>
-            {list.map((item) => (
-              <div key={item.title} className="flex flex-col justify-center items-center bg-transparent">
-                <Image
-                  radius="lg"
-                  width="75%"
-                  height="75%"
-                  alt={item.title}
-                  className="w-full"
-                  src={item.img}
-                />
-                <h3 className="text-center mt-2">{item.title}</h3>
-              </div>
-            ))}
-          </div>
+            <DotNetIcon></DotNetIcon>
+            <DotNetCoreIcon></DotNetCoreIcon>
+            <CPPIcon></CPPIcon>
+            <CIcon></CIcon>
+            <PythonIcon></PythonIcon>
+            <JavaIcon></JavaIcon>
+            <JavaScriptIcon></JavaScriptIcon>
+            <CSharpIcon></CSharpIcon>
+            <ReactIcon></ReactIcon>
+            <AzureIcon></AzureIcon>
+            <MongoDBIcon></MongoDBIcon>
         </div>
       </section>
     </Suspense>
