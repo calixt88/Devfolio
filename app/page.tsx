@@ -7,6 +7,8 @@ import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { AzureIcon, CIcon, CPPIcon, CSharpIcon, DotNetCoreIcon, DotNetIcon, GithubIcon, JavaIcon, JavaScriptIcon, LinkedInIcon, MongoDBIcon, PythonIcon, ReactIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
 import ParticlesComponent from '@/components/ParticlesComponent';
+import Experience from '@/components/experience';
+import Projects from '@/components/projects';
 
 export default function Home() {
 
@@ -57,23 +59,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="text-center mt-40 bg-transparent">
-          <h1 className={title({ size: "lg", color: "foreground" })}>Experience</h1>
-        </div>
-
-        <div className="flex justify-center">
-            <DotNetIcon></DotNetIcon>
-            <DotNetCoreIcon></DotNetCoreIcon>
-            <CPPIcon></CPPIcon>
-            <CIcon></CIcon>
-            <PythonIcon></PythonIcon>
-            <JavaIcon></JavaIcon>
-            <JavaScriptIcon></JavaScriptIcon>
-            <CSharpIcon></CSharpIcon>
-            <ReactIcon></ReactIcon>
-            <AzureIcon></AzureIcon>
-            <MongoDBIcon></MongoDBIcon>
-        </div>
+        <Experience></Experience>
+        <Projects></Projects>
       </section>
     </Suspense>
   );

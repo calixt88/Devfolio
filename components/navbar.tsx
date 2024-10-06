@@ -49,7 +49,7 @@ export const Navbar = () => {
           About
         </button>
         <button
-          onClick={() => scrollToY(1000)}
+          onClick={() => scrollToY(700)}
           className={buttonStyles({
             variant: "bordered",
             radius: "full",

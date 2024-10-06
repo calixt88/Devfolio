@@ -45,27 +45,6 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
 	);
 };
 
-export const TwitterIcon: React.FC<IconSvgProps> = ({
-	size = 24,
-	width,
-	height,
-	...props
-}) => {
-	return (
-		<svg
-			height={size || height}
-			viewBox="0 0 24 24"
-			width={size || width}
-			{...props}
-		>
-			<path
-				d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-				fill="currentColor"
-			/>
-		</svg>
-	);
-};
-
 export const GithubIcon: React.FC<IconSvgProps> = ({
 	size = 24,
 	width,
@@ -277,26 +256,26 @@ export const ReactLogoIcon: React.FC<IconSvgProps> = ({
   );
 };
 
-  export const RightArrowIcon: React.FC<IconSvgProps> = ({
-	size = 24,
-	width,
-	height,
-	...props
-  }) => {
-	return (
-	  <svg
-		height={size || height}
-		viewBox="0 0 24 24"
-		width={size || width}
-		{...props}
-	  >
-		<path
-		  fill="currentColor"
-		  d="M9 18l6-6-6-6v12z"
-		/>
-	  </svg>
-	);
-  };
+//   export const RightArrowIcon: React.FC<IconSvgProps> = ({
+// 	size = 24,
+// 	width,
+// 	height,
+// 	...props
+//   }) => {
+// 	return (
+// 	  <svg
+// 		height={size || height}
+// 		viewBox="0 0 24 24"
+// 		width={size || width}
+// 		{...props}
+// 	  >
+// 		<path
+// 		  fill="currentColor"
+// 		  d="M9 18l6-6-6-6v12z"
+// 		/>
+// 	  </svg>
+// 	);
+//   };
 
   export const DevfolioLogo: React.FC<{ size?: number, color?: string }> = ({ size = 36, color = '#18C964' }) => (
 	<svg
@@ -527,4 +506,154 @@ export const ReactLogoIcon: React.FC<IconSvgProps> = ({
 	</svg>
   );
   
+  export const FlutterIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => (
+	<svg
+	  height={size || height}
+	  viewBox="0 0 128 128"
+	  width={size || width}
+	  {...props}
+	>
+	  <path
+		fill="#1AC964"
+		d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"
+	  ></path>
+	</svg>
+  );
+  
+  export const AndroidIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => (
+	<svg
+	  height={size || height}
+	  viewBox="0 0 128 128"
+	  width={size || width}
+	  {...props}
+	>
+	  <path
+		fill="#1AC964"
+		d="M21.005 43.003c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736a7.338 7.338 0 007.342 7.343 7.33 7.33 0 007.338-7.342V50.34a7.345 7.345 0 00-7.346-7.337m59.193-27.602l5.123-9.355a1.023 1.023 0 00-.401-1.388 1.022 1.022 0 00-1.382.407l-5.175 9.453c-4.354-1.938-9.227-3.024-14.383-3.019-5.142-.005-10.013 1.078-14.349 3.005L44.45 5.075a1.01 1.01 0 00-1.378-.406 1.007 1.007 0 00-.404 1.38l5.125 9.349c-10.07 5.193-16.874 15.083-16.868 26.438l66.118-.008c.002-11.351-6.79-21.221-16.845-26.427M48.942 29.858a2.772 2.772 0 01.003-5.545 2.78 2.78 0 012.775 2.774 2.776 2.776 0 01-2.778 2.771m30.106-.005a2.77 2.77 0 01-2.772-2.771 2.793 2.793 0 012.773-2.778 2.79 2.79 0 012.767 2.779 2.767 2.767 0 01-2.768 2.77M31.195 44.39l.011 47.635a7.822 7.822 0 007.832 7.831l5.333.002.006 16.264c-.001 4.05 3.291 7.342 7.335 7.342 4.056 0 7.342-3.295 7.343-7.347l-.004-16.26 9.909-.003.004 16.263c0 4.047 3.293 7.346 7.338 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.352-.004a7.835 7.835 0 007.836-7.834l-.009-47.635-65.624.011zm83.134 5.943a7.338 7.338 0 00-7.341-7.339c-4.053-.004-7.337 3.287-7.337 7.342l.006 30.738a7.334 7.334 0 007.339 7.339 7.337 7.337 0 007.338-7.343l-.005-30.737z"
+	  ></path>
+	</svg>
+  );
+  
+  export const SQLIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => (
+	<svg
+	  height={size || height}
+	  viewBox="0 0 128 128"
+	  width={size || width}
+	  {...props}
+	>
+	  <defs>
+		<radialGradient
+		  id="b"
+		  cx="9.36"
+		  cy="10.57"
+		  fx="9.36"
+		  fy="10.57"
+		  r="7.07"
+		  gradientTransform="matrix(73.03125 0 0 37.1875 29.797 56.535)"
+		>
+		  <stop offset="0" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".58" style={{ stopColor: "#eee", stopOpacity: 1 }}></stop>
+		  <stop offset="1" style={{ stopColor: "#000000", stopOpacity: 1 }}></stop>
+		</radialGradient>
+		<linearGradient
+		  id="a"
+		  gradientUnits="userSpaceOnUse"
+		  x1="2.59"
+		  y1="10.16"
+		  x2="15.41"
+		  y2="10.16"
+		  gradientTransform="scale(7.11111)"
+		>
+		  <stop offset="0" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".07" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".36" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".52" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".64" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset=".82" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		  <stop offset="1" style={{ stopColor: "#1AC964", stopOpacity: 1 }}></stop>
+		</linearGradient>
+	  </defs>
+	  <path
+		style={{ stroke: "none", fillRule: "nonzero", fill: "url(#a)" }}
+		d="M64 36.55c-25.172 0-45.582-7.109-45.582-16.495v87.89c0 9.032 20.055 16.356 44.941 16.5H64c25.172 0 45.582-7.113 45.582-16.5v-87.89c0 9.172-20.41 16.496-45.582 16.496Zm0 0"
+	  ></path>
+	  <path
+		style={{ stroke: "none", fillRule: "nonzero", fill: "#e8e8e8", fillOpacity: 0 }}
+		d="M109.582 20.055c0 9.172-20.41 16.496-45.582 16.496s-45.582-7.11-45.582-16.496c0-9.387 20.41-16.5 45.582-16.5s45.582 7.113 45.582 16.5"
+	  ></path>
+	  <path
+		style={{ stroke: "none", fillRule: "nonzero", fill: "#1AC964", fillOpacity: 1 }}
+		d="M98.988 18.703c0 5.832-15.718 10.524-34.988 10.524s-34.988-4.692-34.988-10.524C29.012 12.871 44.73 8.25 64 8.25s34.988 4.691 34.988 10.453"
+	  ></path>
+	  <path
+		style={{ stroke: "none", fillRule: "nonzero", fill: "#1AC964", fillOpacity: 1 }}
+		d="M64 21.332a82.193 82.193 0 0 0-27.664 4.055A81.213 81.213 0 0 0 64 29.227a79.334 79.334 0 0 0 27.664-4.125A84.332 84.332 0 0 0 64 21.332Zm0 0"
+	  ></path>
+	  <path
+		style={{ stroke: "none", fillRule: "nonzero", fill: "url(#b)" }}
+		d="M91.734 81.066V56.891h-6.402v29.367h17.496v-5.192ZM40.961 69.191a13.064 13.064 0 0 1-3.629-2.203 3.13 3.13 0 0 1-.852-2.277 2.418 2.418 0 0 1 1.067-2.133 4.847 4.847 0 0 1 2.988-.855 11.533 11.533 0 0 1 7.11 2.062v-6.113a18.236 18.236 0 0 0-7.11-1.137 11.67 11.67 0 0 0-7.754 2.414 7.68 7.68 0 0 0-2.984 6.332c0 3.625 2.273 6.469 7.11 8.602 1.57.668 3.05 1.527 4.41 2.562a2.982 2.982 0 0 1 1.066 2.274c0 .879-.426 1.699-1.137 2.207a5.786 5.786 0 0 1-3.203.781 11.801 11.801 0 0 1-7.75-2.988v6.613a15.411 15.411 0 0 0 7.61 1.707c2.98.176 5.933-.648 8.39-2.348a7.681 7.681 0 0 0 2.348-6.468 7.458 7.458 0 0 0-1.778-4.977 17.225 17.225 0 0 0-5.902-4.055Zm37.262 11.305a16.634 16.634 0 0 0 2.347-8.957A16.509 16.509 0 0 0 78.223 64a12.87 12.87 0 0 0-4.977-5.332 14.228 14.228 0 0 0-7.113-1.852 15.015 15.015 0 0 0-7.68 1.922A13.217 13.217 0 0 0 53.262 64a17.48 17.48 0 0 0-1.848 8.105 16.06 16.06 0 0 0 1.707 7.114 12.526 12.526 0 0 0 4.906 5.261 14.679 14.679 0 0 0 7.11 2.133l6.117 7.11h8.605l-8.75-7.82a12.736 12.736 0 0 0 7.114-5.407Zm-7.114-1.777a6.673 6.673 0 0 1-5.402 2.488 6.538 6.538 0 0 1-5.406-2.559 10.842 10.842 0 0 1-2.063-7.109 10.903 10.903 0 0 1 2.063-7.113 7.104 7.104 0 0 1 5.547-2.63 6.181 6.181 0 0 1 5.336 2.63 11.533 11.533 0 0 1 1.918 7.113 10.353 10.353 0 0 1-1.993 7.18Zm0 0"
+	  ></path>
+	</svg>
+  );
+  
+  export const LeftArrowIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => (
+	<svg
+	  height={size || height}
+	  viewBox="0 0 128 128"
+	  width={size || width}
+	  {...props}
+	>
+	  <text
+		x="32"
+		y="96"
+		fontSize="96"
+		fill="#1AC964"
+	  >
+		&lt;
+	  </text>
+	</svg>
+  );
+
+  export const RightArrowIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+  }) => (
+	<svg
+	  height={size || height}
+	  viewBox="0 0 128 128"
+	  width={size || width}
+	  {...props}
+	>
+	  <text
+		x="32"
+		y="96"
+		fontSize="96"
+		fill="#1AC964"
+	  >
+		&gt;
+	  </text>
+	</svg>
+  );
   
