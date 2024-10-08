@@ -1,13 +1,13 @@
 "use client";
-
 import React, { Suspense } from 'react';
-import { Image, Link } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { AzureIcon, CIcon, CPPIcon, CSharpIcon, DotNetCoreIcon, DotNetIcon, GithubIcon, JavaIcon, JavaScriptIcon, LinkedInIcon, MongoDBIcon, PythonIcon, ReactIcon, ResumeIcon, RightArrowIcon } from "@/components/icons";
+import { GithubIcon, LinkedInIcon, ResumeIcon } from "@/components/icons";
 import ParticlesComponent from '@/components/ParticlesComponent';
 import Experience from '@/components/experience';
+import ContactMe from '@/components/contactme';
 import Projects from '@/components/projects';
 
 export default function Home() {
@@ -22,13 +22,13 @@ export default function Home() {
           <h1 className={title({ size: "lg", color: "green" })}>Charlebois</h1>
           <h1 className={title({ size: "lg" })}>,&nbsp;</h1>
           <br />
-          <h1 className={title({ size: "lg", color: "foreground" })}>Software Engineer&nbsp;</h1>
+          <h1 className={title({ size: "lg" })}>Software Engineer&nbsp;</h1>
         </div>
 
         <div className="flex gap-3 bg-transparent">
           <Link
             isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
+            className={buttonStyles({ radius: "full", color: "success" })}
             href={siteConfig.links.github}
           >
             <GithubIcon size={20} />
@@ -36,7 +36,7 @@ export default function Home() {
           </Link>
           <Link
             isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
+            className={buttonStyles({ radius: "full", color: "success" })}
             href={siteConfig.links.linkedin}
           >
             <LinkedInIcon size={20} />
@@ -44,7 +44,7 @@ export default function Home() {
           </Link>
           <Link
             isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
+            className={buttonStyles({ radius: "full", color: "success" })}
             href={"/images/CalixtCharleboisResume.pdf"}
             download="CalixtCharleboisResume.pdf"
           >
@@ -61,6 +61,8 @@ export default function Home() {
 
         <Experience></Experience>
         <Projects></Projects>
+        <ContactMe></ContactMe>
+
       </section>
     </Suspense>
   );

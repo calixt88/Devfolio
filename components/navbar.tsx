@@ -40,7 +40,6 @@ export const Navbar = () => {
         <button
           onClick={() => scrollToY(0)}
           className={buttonStyles({
-            variant: "bordered",
             radius: "full",
             color: "success",
             size: "md",
@@ -51,7 +50,6 @@ export const Navbar = () => {
         <button
           onClick={() => scrollToY(700)}
           className={buttonStyles({
-            variant: "bordered",
             radius: "full",
             color: "success",
             size: "md",
@@ -62,7 +60,6 @@ export const Navbar = () => {
         <button
           onClick={() => scrollToY(1500)}
           className={buttonStyles({
-            variant: "bordered",
             radius: "full",
             color: "success",
             size: "md",
@@ -73,7 +70,6 @@ export const Navbar = () => {
         <button
           onClick={() => scrollToY(2000)}
           className={buttonStyles({
-            variant: "bordered",
             radius: "full",
             color: "success",
             size: "md",

@@ -5,7 +5,7 @@ export const Experience = () => {
     return (
         <>
             <div className="text-center mt-40 bg-transparent">
-                <h1 className={title({ size: "lg", color: "foreground" })}>Experience</h1>
+                <h2 className="text-4xl font-bold text-center text-white mb-12">Languages & Frameworks</h2>
             </div>
 
             <div className="flex justify-center items-center flex-wrap gap-8 mt-8 mx-auto" style={{ maxWidth: '1000px' }}>
