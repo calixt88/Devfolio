@@ -58,7 +58,7 @@ export const Navbar = () => {
           Experience
         </button>
         <button
-          onClick={() => scrollToY(1500)}
+          onClick={() => scrollToY(1600)}
           className={buttonStyles({
             radius: "full",
             color: "success",
@@ -68,7 +68,7 @@ export const Navbar = () => {
           Projects
         </button>
         <button
-          onClick={() => scrollToY(2000)}
+          onClick={() => scrollToY(2200)}
           className={buttonStyles({
             radius: "full",
             color: "success",

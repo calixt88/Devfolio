@@ -5,25 +5,28 @@ const projects = [
     title: 'Runescape Quest Chatbot',
     description: 'A chatbot that answers questions about Runescape quests.',
     tags: ['Python'],
-    image: '/images/msoe.png',
+    image: '/images/runescapechatbot.png',
+    link: 'https://github.com/calixt88/RunescapeQuestChatbot'
   },
   {
     title: 'Portfolio Website',
     description: 'A personal website to demonstrate full stack capabilities.',
     tags: ['TypeScript', 'React'],
-    image: '/images/msoe.png',
+    image: '/images/devfolio.png',
+    link: 'https://github.com/calixt88/Devfolio',
   },
   {
     title: 'xClicker',
     description: 'An xClicker clone written in Java.',
     tags: ['Java', 'JavaFX', 'Scene Builder'],
-    image: '/images/autoclicker.png',
+    image: '/images/xclicker.png',
+    link: 'https://github.com/calixt88/xClicker'
   },
   {
-    title: 'Runescape Quest Chatbot',
+    title: 'Runescape Scripts',
     description: 'A chatbot that answers questions about Runescape quests.',
     tags: ['Python'],
-    image: '/images/msoe.png',
+    image: '/images/runescapescripting.png',
   },
   {
     title: 'Portfolio Website',
@@ -71,7 +74,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="p-6">
-                <a href="#" className="text-green-400 hover:underline">View Project &rarr;</a>
+                <a href={project.link} className="text-green-400 hover:underline">View Project &rarr;</a>
               </div>
             </div>
           ))}
