@@ -23,22 +23,22 @@ const projects = [
     link: 'https://github.com/calixt88/xClicker'
   },
   {
-    title: 'Runescape Scripts',
+    title: 'Study App',
+    description: 'App that promotes studying by collecting rewards for study time.',
+    tags: ['Flutter', 'Dart'],
+    image: '/images/space.png',
+  },
+  {
+    title: 'Runescape Botting Scripts',
     description: 'A chatbot that answers questions about Runescape quests.',
     tags: ['Python'],
-    image: '/images/runescapescripting.png',
+    image: '/images/scripting.png',
   },
   {
-    title: 'Portfolio Website',
-    description: 'A personal website to demonstrate full stack capabilities.',
-    tags: ['TypeScript', 'React'],
-    image: '/images/msoe.png',
-  },
-  {
-    title: 'xClicker',
-    description: 'An xClicker clone written in Java.',
-    tags: ['Java', ''],
-    image: '/images/msoe.png',
+    title: 'Spotify Clone',
+    description: 'Spotify clone written using flutter and the dart programming language.',
+    tags: ['Flutter', 'Dart'],
+    image: '/images/spotify.jpg',
   },
 ];
 
@@ -46,8 +46,8 @@ const Projects = () => {
   return (
     <section className="py-16 mt-80">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Selected Projects</h2>
-        <p className="text-center text-gray-400 mb-16">Explore some of my work across various domains</p>
+        <h2 className="text-4xl font-bold text-center text-white mb-6">Notable Projects</h2>
+        <p className="text-center text-gray-400 mb-16">A curated selection of my work spanning multiple fields and technologies.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div

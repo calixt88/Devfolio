@@ -21,8 +21,13 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       maxWidth="xl"
-      className="pt-4 top-24px z-50"
-      style={{ backgroundColor: 'transparent' }}
+      className="pt-4 z-50"
+      style={{ 
+        position: 'fixed', 
+        top: '0', 
+        width: '100%', 
+        backgroundColor: 'transparent' 
+      }}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -43,39 +48,43 @@ export const Navbar = () => {
             radius: "full",
             color: "success",
             size: "md",
+            variant: "bordered",
           })}
         >
           About
         </button>
         <button
-          onClick={() => scrollToY(700)}
+          onClick={() => scrollToY(650)}
           className={buttonStyles({
             radius: "full",
             color: "success",
             size: "md",
+            variant: "bordered",
           })}
         >
           Experience
         </button>
         <button
-          onClick={() => scrollToY(1600)}
+          onClick={() => scrollToY(1400)}
           className={buttonStyles({
             radius: "full",
             color: "success",
             size: "md",
+            variant: "bordered",
+          })}
+        >
+          Languages
+        </button>
+        <button
+          onClick={() => scrollToY(2250)}
+          className={buttonStyles({
+            radius: "full",
+            color: "success",
+            size: "md",
+            variant: "bordered",
           })}
         >
           Projects
-        </button>
-        <button
-          onClick={() => scrollToY(2200)}
-          className={buttonStyles({
-            radius: "full",
-            color: "success",
-            size: "md",
-          })}
-        >
-          Contact
         </button>
       </NavbarContent>
 
