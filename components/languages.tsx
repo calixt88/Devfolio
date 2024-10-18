@@ -1,7 +1,7 @@
 import { AzureIcon, CIcon, CPPIcon, CSharpIcon, DotNetCoreIcon, DotNetIcon, JavaIcon, JavaScriptIcon, MongoDBIcon, PythonIcon, ReactIcon, FlutterIcon, AndroidIcon, SQLIcon} from "@/components/icons";
 import { title } from "@/components/primitives";
 
-export const Experience = () => {
+export const Languages = () => {
     return (
         <>
             <div className="text-center mt-40 bg-transparent">
@@ -28,6 +28,6 @@ export const Experience = () => {
     );
 };
 
-export default Experience;
+export default Languages;
 
 
